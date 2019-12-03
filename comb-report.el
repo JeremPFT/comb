@@ -97,7 +97,7 @@
       ;; attempt to load the file and mark the region (errors if file shrinked
       ;; or deleted)
       (ignore-errors
-        (insert-file-contents-literally path)
+        (insert-file-contents path)
         (set-text-properties begin end '(face comb-match))
         (setq file-ok t))
       (goto-char begin)
